@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: rgb(161, 159, 159);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0px 5px 20px black;
+  border-radius: 20px;
+  width: 65%;
+  display: flex;
+  gap: 20px;
+  z-index: 10;
+  position: relative;
+}
+
+.card-init-1 {
+  background-color: black;
+  color: white;
+  padding: 15px 20px;
+  position: absolute;
+  top: 30%;
+  left: -119px;
+  transform: rotate(270deg);
+}
+
+.card-init-2 {
+  background-color: black;
+  color: white;
+  padding: 10px 12px;
+  position: absolute;
+  top: 70%;
+  left: -50px;
+}
+
+.card-init-3 {
+  background-color: black;
+  color: white;
+  padding: 10px 12px;
+  position: absolute;
+  top: 80%;
+  left: -50px;
+}
+
+.card-img {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px 0 0 20px;
+  background-color: rgb(213, 212, 212);
+}
+
+img {
+  width: 70%;
+  object-fit: cover;
+}
+
+.card-det {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 80px 30px;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 100;
+  font-family: 'Courier New', Courier, monospace;
+  color: gray;
+}
+
+h3 {
+  color: gray;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: small;
+}
+
+hr {
+  border: 1px solid rgb(218, 214, 214);
+  margin: 10px 0;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: gray;
+  font-weight: bold;
+}
+
+h4 {
+  color: gray;
+  font-weight: bold;
+}
+
+input {
+  margin: 0 5px;
+  padding: 10px;
+  border-radius: 100%;
+  appearance: none;
+}
+
+input:checked {
+  border: 2px solid white;
+  outline: 1px solid black;
+}
+
+.negro {
+  background-color: black;
+}
+
+.gris {
+  background-color: gray;
+}
+
+.azuel {
+  background-color: rgb(37, 37, 155);
+}
+
+.marron {
+  background-color: brown;
+}
+
+.caramelo {
+  background-color: blanchedalmond;
+}
+
+.precio {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.precio > p {
+  font-size: 35px;
+  color: gray;
+}
+
+.precio > button {
+  padding: 5px 20px;
+  font-weight: bold;
+  color: white;
+  background-color: gray;
+  border: 0;
+  border-radius: 5px;
+}
+
+@media (max-width:500px){
+  .card{
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding:50px;
+    margin: 0;
+  }
+
+  .card-img{
+    width: 100%;
+    border-radius: 0;
+    padding: 20px 0;
+  }
+
+  .card-det{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
