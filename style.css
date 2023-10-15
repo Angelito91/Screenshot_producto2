@@ -205,6 +205,10 @@ input:checked {
     margin-top: 20px;
   }
 
+  hr{
+    width: 90%;
+  }
+  
   .precio {
     flex-direction: column;
   }
@@ -226,5 +230,4 @@ input:checked {
   .card {
     width: 100%;
   }
-
 }
