@@ -147,7 +147,7 @@ input:checked {
 }
 
 .precio > button {
-  padding: 5px 20px;
+  padding: 10px 20px;
   font-weight: bold;
   color: white;
   background-color: gray;
@@ -155,20 +155,44 @@ input:checked {
   border-radius: 5px;
 }
 
-@media (max-width:500px){
-  .card{
-    flex-direction: column;
-    justify-content: center;
+@media (max-width: 1220px) {
+  .card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 950px) {
+  .card {
+    width: 85%;
+  }
+}
+
+@media (max-width: 850px) {
+  .card {
     width: 100%;
   }
 
-  .card-img{
+  .card-init-1,
+  .card-init-2,
+  .card-init-3 {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .card {
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+  }
+
+  .card-img {
     width: 100%;
     border-radius: 0;
     padding: 20px 0;
   }
 
-  .card-det{
+  .card-det {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -177,21 +201,30 @@ input:checked {
     text-align: center;
   }
 
-  h1{
+  h1 {
     margin-top: 20px;
   }
 
-  .precio{
+  .precio {
     flex-direction: column;
   }
 
-  .precio > button{
+  .precio > button {
     width: 100%;
     padding: 10px 30px;
     margin-bottom: 20px;
   }
 
-  .card-init-1,.card-init-2,.card-init-3{
+  .card-init-1,
+  .card-init-2,
+  .card-init-3 {
     display: none;
   }
+}
+
+@media (max-width: 450px) {
+  .card {
+    width: 100%;
+  }
+
 }
